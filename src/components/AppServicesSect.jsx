@@ -15,7 +15,7 @@ import TeamFlow from '../assets/icons/teamflow.png';
 
 export default function AppServicesSect({ service }) {
   return (
-    <div className="mb-16 mt-20 flex w-screen flex-col items-center justify-center lg:px-32 xl:flex-row-reverse xl:justify-between 2xl:px-96">
+    <div className="mb-16 mt-6 flex w-screen flex-col items-center justify-center lg:px-32 xl:flex-row-reverse xl:justify-between 2xl:px-96">
       <img
         src={
           service == 'Organizational Productivity'
@@ -24,7 +24,7 @@ export default function AppServicesSect({ service }) {
               ? support
               : collaboration
         }
-        className="mb-20 w-[70vw] md:w-[40vw] xl:w-[25vw] xl:pt-36"
+        className="w-[70vw] md:mb-20 md:w-[40vw] xl:w-[25vw] xl:pt-36"
       />
       <div className="w-fit">
         <h1 className="pl-8 pr-12 text-xl font-medium">
@@ -43,7 +43,7 @@ export default function AppServicesSect({ service }) {
           <img src={arrow} alt="" className="inline h-6 cursor-pointer" />
         </p>
         {service == 'Organizational Productivity' && (
-          <div className="mt-12 flex flex-col gap-10 pl-8 font-generic">
+          <div className="mt-6 flex flex-col gap-10 pl-8 font-generic">
             <div className="flex gap-4">
               <img
                 src={CollaborateProSuite}
@@ -80,7 +80,7 @@ export default function AppServicesSect({ service }) {
           </div>
         )}
         {service == 'IT Solutions and Support' && (
-          <div className="mt-12 flex flex-col gap-10 pl-8 font-generic">
+          <div className="mt-6 flex flex-col gap-10 pl-8 font-generic">
             <div className="flex gap-4">
               <img
                 src={ServiceDeskCentral}
@@ -117,7 +117,7 @@ export default function AppServicesSect({ service }) {
           </div>
         )}
         {service == 'Collaboration Services' && (
-          <div className="mt-12 flex flex-col gap-10 pl-8 font-generic">
+          <div className="mt-6 flex flex-col gap-10 pl-8 font-generic">
             <div className="flex gap-4">
               <img
                 src={CollaborateHub}
